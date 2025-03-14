@@ -1,0 +1,41 @@
+.actionButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    color: black;
+}
+
+.create {
+    background-color: #fecd04;
+}
+
+.create:hover {
+    background-color: #e6b800;
+    color: white;
+}
+
+.create:active {
+    background-color: #d9a600;
+    transform: scale(0.95);
+    color: white;
+}
+
+.upload {
+    background-color: #a2cb30;
+}
+
+.upload:hover {
+    background-color: #90b329;
+    color: white;
+}
+
+.upload:active {
+    background-color: #7da222;
+    transform: scale(0.95);
+    color: white;
+}
