@@ -6,6 +6,10 @@
     border-bottom: 1px solid #c1c1c1;
 }
 
+.broderNone {
+    border-bottom: none;
+}
+
 .leftSide {
     display: flex;
     align-items: center;

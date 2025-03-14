@@ -17,7 +17,7 @@ export const useFileStore = create<FileStore>((set) => ({
 
         setTimeout(() => {
             const rawData = [
-                { id: 1, type: "dir", parentId: null, name: "Ваши файлы", isFavorite: false },
+                {id: 1, type: "dir", parentId: null, name: "Ваши файлы", isFavorite: false },
                 { id: 2, type: "dir", parentId: 1, name: "second", isFavorite: false },
                 { id: 3, type: "dir", parentId: 1, name: "test", isFavorite: true },
                 { id: 4, type: "dir", parentId: 1, name: "third", isFavorite: false },
@@ -26,11 +26,14 @@ export const useFileStore = create<FileStore>((set) => ({
                 { id: 7, type: "dir", parentId: 6, name: "Глубокое вложение", isFavorite: false },
             ];
 
+
             const items = rawData.map((row) => new Item({
                 ...row,
                 type: row.type as FileType
             }));
             const tree = buildTree(items);
+
+            console.log("Файловая структура:", tree);
 
             set({ files: tree, isLoading: false });
         }, 1000);
