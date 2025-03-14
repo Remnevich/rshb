@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}

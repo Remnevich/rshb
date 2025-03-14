@@ -1,6 +1,5 @@
 import React from "react";
-import { FolderInput } from 'lucide-react';
-import { Upload } from 'lucide-react';
+import { FolderInput, Upload } from 'lucide-react';
 
 import styles from './ActionButton.module.css'
 
